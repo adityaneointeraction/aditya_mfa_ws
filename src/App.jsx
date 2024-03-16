@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Routes, Route, Link, Outlet, useParams, useLocation } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link, Outlet, useParams, useLocation } from "react-router-dom";
 import "../styles.scss";
 import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
@@ -10,7 +10,7 @@ const App = () => {
     <Router>
       <Nav />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" exact element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
