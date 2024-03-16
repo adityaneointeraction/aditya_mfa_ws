@@ -31,4 +31,4 @@ function Nav() {
     </nav>
   );
 }
-ReactDOM.render(<App />, document.getElementById("app"));
+export default App;
