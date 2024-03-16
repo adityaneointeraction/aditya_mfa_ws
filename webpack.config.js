@@ -4,7 +4,7 @@ const Dotenv = require("dotenv-webpack");
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   output: {
-    publicPath: "https://adityaneointeraction.github.io/aditya_mfa_ws/dist/",
+    publicPath: "/",
   },
 
   resolve: {
