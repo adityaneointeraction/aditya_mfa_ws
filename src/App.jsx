@@ -7,13 +7,13 @@ import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <Router>
+    <>
       <Nav />
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
-    </Router>
+    </>
   );
 };
 
